@@ -1,0 +1,107 @@
+body
+{
+    background-color: black;
+}
+.head
+{
+    display: flex;
+    justify-content: center;
+}
+.headtext
+{
+    color: rgb(138, 247, 247);
+    text-shadow: 1px 1px 6px white;
+}
+.container
+{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+.box
+{
+    border: 5px solid cyan;
+    background-color: cyan;
+    width: 60px;
+    height: 60px;
+    box-shadow: 8px 8px 12px  white;
+    border-radius: 0% 50%;
+    
+}
+.box:hover
+{
+    animation: pg1 3s 4 alternate ;
+    
+}
+
+@keyframes pg1
+{
+    0%
+    {
+        rotate: -360deg ;
+    }
+    50%
+    {
+        rotate: 360deg;
+    }
+    100%
+    {
+        rotate: -360deg;
+    }
+   
+}
+@media screen and (min-width:320px) and (max-width:500px)
+{
+    .head
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 30px;
+}
+.headtext2
+{
+    padding-left: 28%;
+
+}
+
+
+    .container
+    {
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        gap: 80px;
+        animation: pg2 3s;
+    }
+    @keyframes pg2
+{
+  
+    0%
+    {
+        transform: translateX(-40%) ;
+    }
+}
+
+
+@keyframes pg1
+{
+    100%
+    {
+        rotate: -360deg ;
+    }
+    100%
+    {
+        rotate: 360deg;
+    }
+   
+}
+
+}
+
